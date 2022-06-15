@@ -73,7 +73,7 @@
                                 <i class="fab fa-google"></i>
                             </a>
                             <a href="#" class="social-icon">
-                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-facebook-f"></i>
                             </a>
                         </div>
                     </form>

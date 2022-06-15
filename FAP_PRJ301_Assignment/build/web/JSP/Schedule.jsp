@@ -13,7 +13,7 @@
           <link rel="stylesheet" href="./assets/css/schedule.css">
     </head>
     <body>
-        <form action="">
+        <form action="Schedule" method="POST">
             <div class="campus">Campus:
                 <select name="" id="">
                     <option value="FU HL">FU-Hòa Lạc</option>

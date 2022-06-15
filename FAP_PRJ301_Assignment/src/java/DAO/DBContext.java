@@ -7,6 +7,7 @@ package DAO;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -14,13 +15,14 @@ import java.util.logging.Logger;
  *
  * @author ASUS G731G
  */
-public class DBContext<T> {
+public abstract class DBContext<T> {
+
     protected Connection connection;
-    
-    public DBContext(){
+
+    public DBContext() {
         try {
-            String user="sa";
-            String password="123456";
+            String user = "sa";
+            String password = "123456";
             String url = "jdbc:sqlserver://localhost:1433;databaseName=FAP_Database";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, password);
@@ -28,5 +30,15 @@ public class DBContext<T> {
             Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
+    public abstract ArrayList<T> list();
+
+    public abstract T get(int id);
+
+    public abstract void insert(T model);
+
+    public abstract void update(T model);
+
+    public abstract void delete(T model);
+
 }

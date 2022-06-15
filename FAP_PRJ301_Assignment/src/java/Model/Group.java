@@ -10,7 +10,7 @@ import java.util.ArrayList;
  *
  * @author ASUS G731G
  */
-class Group {
+public class Group {
     private int group_id;
     private String group_name;
     private String course_id;
