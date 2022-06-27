@@ -5,18 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Activity Attendance</title>
+    <title>Take Attendance</title>
     <link rel="stylesheet" href="./css/detail.css">
 </head>
 
 <body>
-    <div class="header">
-        <h2>Single activity Attendance</h2>
-        <p>Attendance for IOT1702 with Lecture Sonnt5 at slot 1 on Monday 19/01/2022 in room BE-301 at FU-HL</p>
-        <table style="width:100%" id="schedule">
-    </div>
     <form action="">
-        <table id="schedule">
+        <div class="header">
+            <h2>Take Attendance for students</h2>
+        </div>
+        <table id="schedule" style="width:100%">
             <thead>
                 <th>No</th>
                 <th>Group</th>
@@ -25,7 +23,6 @@
                 <th>Image</th>
                 <th>Status</th>
                 <th>Comment</th>
-                <th>Taker</th>
                 <th>Record time</th>
             </thead>
             <tbody>
@@ -35,9 +32,11 @@
                     <td>HE15000</td>
                     <td>Đỗ Mạnh Hùng</td>
                     <td><img src="" alt="Image"></td>
-                    <td>Absent</td>
+                    <td>
+                        <input type="radio" name="takeattendent" value="Absent">Absent
+                        <input type="radio" name="takeattendent" value="Present">Present
+                    </td>
                     <td></td>
-                    <td>sonnt5</td>
                     <td>1/19/2022</td>
                 </tr>
 
@@ -47,9 +46,11 @@
                     <td>HE15001</td>
                     <td>Nguyễn Thị B</td>
                     <td><img src="" alt="Image"></td>
-                    <td>Present</td>
+                    <td>
+                        <input type="radio" name="takeattendent1" value="Absent">Absent
+                        <input type="radio" name="takeattendent1" value="Present">Present
+                    </td>
                     <td></td>
-                    <td>sonnt5</td>
                     <td>1/19/2022</td>
                 </tr>
 
@@ -59,9 +60,11 @@
                     <td>HE15003</td>
                     <td>Nguyễn Văn C</td>
                     <td><img src="" alt="Image"></td>
-                    <td>Absent</td>
+                    <td>
+                        <input type="radio" name="takeattendent2" value="Absent">Absent
+                        <input type="radio" name="takeattendent2" value="Present">Present
+                    </td>
                     <td></td>
-                    <td>sonnt5</td>
                     <td>1/19/2022</td>
                 </tr>
 
@@ -71,9 +74,11 @@
                     <td>HE15005</td>
                     <td>Lê Thị Riêng</td>
                     <td><img src="" alt="Image"></td>
-                    <td>Present</td>
+                    <td>
+                        <input type="radio" name="takeattendent3" value="Absent">Absent
+                        <input type="radio" name="takeattendent3" value="Present">Present
+                    </td>
                     <td></td>
-                    <td>sonnt5</td>
                     <td>1/19/2022</td>
                 </tr>
 
@@ -83,9 +88,11 @@
                     <td>HE15004</td>
                     <td>Đỗ Mạnh Hùng</td>
                     <td><img src="" alt="Image"></td>
-                    <td>Absent</td>
+                    <td>
+                        <input type="radio" name="takeattendent4" value="Absent">Absent
+                        <input type="radio" name="takeattendent4" value="Present">Present
+                    </td>
                     <td></td>
-                    <td>sonnt5</td>
                     <td>1/19/2022</td>
                 </tr>
 
@@ -95,9 +102,11 @@
                     <td>HE15006</td>
                     <td>Bùi Thị Nở</td>
                     <td><img src="" alt="Image"></td>
-                    <td>Present</td>
+                    <td>
+                        <input type="radio" name="takeattendent5" value="Absent">Absent
+                        <input type="radio" name="takeattendent5" value="Present">Present
+                    </td>
                     <td></td>
-                    <td>sonnt5</td>
                     <td>1/19/2022</td>
                 </tr>
 
@@ -107,9 +116,11 @@
                     <td>HE15009</td>
                     <td>Đỗ Mạnh Hùng</td>
                     <td><img src="" alt="Image"></td>
-                    <td>Absent</td>
+                    <td>
+                        <input type="radio" name="takeattendent6" value="Absent">Absent
+                        <input type="radio" name="takeattendent6" value="Present">Present
+                    </td>
                     <td></td>
-                    <td>sonnt5</td>
                     <td>1/19/2022</td>
                 </tr>
 
@@ -119,9 +130,11 @@
                     <td>HE15010</td>
                     <td>Nguyễn Chí Phèo</td>
                     <td><img src="" alt="Image"></td>
-                    <td>Present</td>
+                    <td>
+                        <input type="radio" name="takeattendent7" value="Absent">Absent
+                        <input type="radio" name="takeattendent7" value="Present">Present
+                    </td>
                     <td></td>
-                    <td>sonnt5</td>
                     <td>1/19/2022</td>
                 </tr>
             </tbody>

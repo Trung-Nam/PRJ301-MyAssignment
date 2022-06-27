@@ -20,6 +20,11 @@ form {
   
 }
 
+h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
 #schedule {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
