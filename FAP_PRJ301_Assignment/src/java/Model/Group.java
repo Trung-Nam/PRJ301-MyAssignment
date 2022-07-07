@@ -15,17 +15,19 @@ public class Group {
     private String group_name;
     private String course_id;
     private ArrayList<Student> students;
-    private int structor_id;
+    private ArrayList<Lession> lessions;
+    private Course course;
 
     public Group() {
     }
 
-    public Group(int group_id, String group_name, String course_id, ArrayList<Student> students, int structor_id) {
+    public Group(int group_id, String group_name, String course_id, ArrayList<Student> students, ArrayList<Lession> lessions, Course course) {
         this.group_id = group_id;
         this.group_name = group_name;
         this.course_id = course_id;
         this.students = students;
-        this.structor_id = structor_id;
+        this.lessions = lessions;
+        this.course = course;
     }
 
     public int getGroup_id() {
@@ -60,12 +62,20 @@ public class Group {
         this.students = students;
     }
 
-    public int getStructor_id() {
-        return structor_id;
+    public ArrayList<Lession> getLessions() {
+        return lessions;
     }
 
-    public void setStructor_id(int structor_id) {
-        this.structor_id = structor_id;
+    public void setLessions(ArrayList<Lession> lessions) {
+        this.lessions = lessions;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
     }
     
     

@@ -14,6 +14,17 @@ public class Course {
     private int course_id;
     private String course_name;
     private ArrayList<Group> groups;
+    private Department department;
+
+    public Course() {
+    }
+
+    public Course(int course_id, String course_name, ArrayList<Group> groups, Department department) {
+        this.course_id = course_id;
+        this.course_name = course_name;
+        this.groups = groups;
+        this.department = department;
+    }
 
     public int getCourse_id() {
         return course_id;
@@ -38,6 +49,18 @@ public class Course {
     public void setGroups(ArrayList<Group> groups) {
         this.groups = groups;
     }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+    
+    
+
+    
     
    
 }

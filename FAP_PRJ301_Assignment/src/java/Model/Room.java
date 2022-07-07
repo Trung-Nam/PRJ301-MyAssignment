@@ -4,6 +4,8 @@
  */
 package Model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ASUS G731G
@@ -11,6 +13,16 @@ package Model;
 public class Room {
     private int id;
     private String name;
+    private ArrayList<Lession> lessions;
+
+    public Room() {
+    }
+
+    public Room(int id, String name, ArrayList<Lession> lessions) {
+        this.id = id;
+        this.name = name;
+        this.lessions = lessions;
+    }
 
     public int getId() {
         return id;
@@ -27,5 +39,14 @@ public class Room {
     public void setName(String name) {
         this.name = name;
     }
-    
+
+    public ArrayList<Lession> getLessions() {
+        return lessions;
+    }
+
+    public void setLessions(ArrayList<Lession> lessions) {
+        this.lessions = lessions;
+    }
+
+
 }

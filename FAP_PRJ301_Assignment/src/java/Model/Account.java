@@ -11,6 +11,16 @@ package Model;
 class Account {
     private String username;
     private String password;
+    private String dislayname;
+
+    public Account() {
+    }
+
+    public Account(String username, String password, String dislayname) {
+        this.username = username;
+        this.password = password;
+        this.dislayname = dislayname;
+    }
 
     public String getUsername() {
         return username;
@@ -27,5 +37,15 @@ class Account {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getDislayname() {
+        return dislayname;
+    }
+
+    public void setDislayname(String dislayname) {
+        this.dislayname = dislayname;
+    }
+    
+    
     
 }

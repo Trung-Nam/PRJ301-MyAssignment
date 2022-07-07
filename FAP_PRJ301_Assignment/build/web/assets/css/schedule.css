@@ -1,52 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-    height: 100vh;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../image/congiun.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../image/học tập bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-form {
-  width: 65%;
-  /* height: 100%; */
-  
+.container {
+    font-size: 1.5rem;
 }
-.campus,.Lecturer{
-  font-size: 22px;
+.campus,
+.Lecturer {
   margin: 4px 0;
 }
-.campus select,.Lecturer input{
-  padding:8px;
-  font-size: 16px;
+.campus select,
+.Lecturer input,
+.year,.week {
+  padding: 6px 12px;
+  font-size: 20px;
 }
-#schedule {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
+.view-btn {
+  border-radius: 4px;
+}
+.view-btn:hover {
+  cursor: pointer;
+  background-color: rgb(136, 136, 136);
+  color: #fff;
+}
+
+.table {
   background: rgba(255, 255, 255, 1);
 }
-
-#schedule td,
-#schedule th {
-  border: 1px solid #ddd;
-  padding: 12px;
-}
-
-#schedule .day {
-  background-color: #ececec;
-}
-
-/* #schedule tr:hover {
-  background-color: #ddd;
-} */
-
-#schedule th {
+.table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -54,3 +41,123 @@ form {
   color: white;
 }
 
+.table .text-uppercase {
+  background-color: #ececec;
+  color: #000;
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+.table-bordered thead td,
+.table-bordered thead th {
+  border-bottom-width: 2px;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #dee2e6;
+}
+
+.bg-sky.box-shadow {
+  box-shadow: 0px 5px 0px 0px #00a2a7;
+}
+
+.bg-orange.box-shadow {
+  box-shadow: 0px 5px 0px 0px #af4305;
+}
+
+.bg-green.box-shadow {
+  box-shadow: 0px 5px 0px 0px #4ca520;
+}
+
+.bg-yellow.box-shadow {
+  box-shadow: 0px 5px 0px 0px #dcbf02;
+}
+
+.bg-pink.box-shadow {
+  box-shadow: 0px 5px 0px 0px #e82d8b;
+}
+
+.bg-purple.box-shadow {
+  box-shadow: 0px 5px 0px 0px #8343e8;
+}
+
+.bg-lightred.box-shadow {
+  box-shadow: 0px 5px 0px 0px #d84213;
+}
+
+.bg-sky {
+  background-color: #02c2c7;
+}
+
+.bg-orange {
+  background-color: #e95601;
+}
+
+.bg-green {
+  background-color: #5bbd2a;
+}
+
+.bg-yellow {
+  background-color: #f0d001;
+}
+
+.bg-pink {
+  background-color: #ff48a4;
+}
+
+.bg-purple {
+  background-color: #9d60ff;
+}
+
+.bg-lightred {
+  background-color: #ff5722;
+}
+
+.padding-15px-lr {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.padding-5px-tb {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.margin-10px-bottom {
+  margin-bottom: 10px;
+}
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.margin-10px-top {
+  margin-top: 10px;
+}
+.font-size14 {
+  font-size: 14px;
+}
+
+.text-light-gray {
+  color: #d6d5d5;
+}
+.font-size13 {
+  font-size: 13px;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #dee2e6;
+}
+.table td,
+.table th {
+  padding: 1rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
