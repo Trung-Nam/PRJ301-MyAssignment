@@ -4,7 +4,7 @@
  */
 package Controller;
 
-import DAO.LessionDBContext;
+
 import Model.Lession;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -34,9 +34,9 @@ public class ScheduleController extends HttpServlet {
         String raw_from = request.getParameter("from");
         String raw_to = request.getParameter("to");
         
-        LessionDBContext ldb =  new LessionDBContext();
-        ArrayList<Lession> less = ldb.filter(raw_from, raw_to);
-        request.setAttribute("less", less);
+//        LessionDBContext ldb =  new LessionDBContext();
+//        ArrayList<Lession> less = ldb.filter(raw_from, raw_to);
+//        request.setAttribute("less", less);
         request.getRequestDispatcher("JSP/Schedule.jsp").forward(request, response);
     }
 

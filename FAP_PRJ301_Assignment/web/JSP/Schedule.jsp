@@ -29,7 +29,7 @@
                 </select>
             </div>
             <div class="Lecturer">Lecturer:
-                <input type="text" value="sonnt5">
+                <input type="text" value="${sessionScope.userLogged.getDislayname()}">
                 <input type="submit" value="View" class="view-btn">
             </div>
 

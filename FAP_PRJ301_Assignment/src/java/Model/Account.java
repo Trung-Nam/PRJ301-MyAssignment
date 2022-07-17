@@ -8,7 +8,7 @@ package Model;
  *
  * @author ASUS G731G
  */
-class Account {
+public class Account {
     private String username;
     private String password;
     private String dislayname;

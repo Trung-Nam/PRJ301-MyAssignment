@@ -22,10 +22,10 @@ public abstract class DBContext<T> {
     public DBContext() {
         try {
             String user = "sa";
-            String password = "12345678";
+            String pass = "12345678";
             String url = "jdbc:sqlserver://localhost:1433;databaseName=FAP_DB";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            connection = DriverManager.getConnection(url, user, password);
+            connection = DriverManager.getConnection(url, user, pass);
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -40,5 +40,4 @@ public abstract class DBContext<T> {
     public abstract void update(T model);
 
     public abstract void delete(T model);
-
 }
